@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+:root {
+  --azul: #1b4580;
+  --branco: #ffffff;
+  --preto: #121214;
+  --bgswitcher: rgba(0, 0, 0, 0.4);
+}
+
+.dark {
+  --branco: #121214;
+  --preto: #ffffff;
+  --bgswitcher: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  background-color: var(--branco);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  color: var(--preto);
+}
+
+#container {
+  margin: 50px auto 0px auto;
+  width: 400px;
+}
+
+#pic_and_name {
+  text-align: center;
+}
+
+#pic_and_name > img {
+  width: 150px;
+}
+
+#pic_and_name > * {
+  padding-bottom: 10px;
+}
+
+.switcher {
+  position: relative;
+  width: 48px;
+  margin: 4px auto;
+}
+
+.switcher > button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-70%);
+  background: var(--preto);
+  border: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.dark .switcher button {
+  left: initial;
+  right: 0;
+}
+
+.switcher > span {
+  display: block;
+  width: 48px;
+  height: 16px;
+  background: var(--bgswitcher);
+  border: 1px solid (var(--preto));
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+#share_part {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 36px;
+}
+
+#share_part > * {
+  padding: 10px 0px;
+}
+
+#share_part > button {
+  width: 50%;
+  background-color: var(--branco);
+  border: 2px solid var(--preto);
+  border-radius: 50px;
+}
+
+#share_part > button:hover {
+  background-color: var(--azul);
+  color: white;
+}
+
+#social_links {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#social_links > * {
+  padding: 10px 0px;
+}
+
+#links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#links > p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#links > button {
+  width: 70%;
+  font-size: 18px;
+  padding: 10px 0px;
+  background-color: var(--azul);
+  color: white;
+  border-radius: 10px;
+}
+
+#links > button:hover {
+  color: var(--preto);
+  background-color: var(--branco);
+  border: 2px solid var(--preto);
+}
