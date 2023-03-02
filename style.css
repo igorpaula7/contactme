@@ -89,14 +89,17 @@ body {
   padding: 10px 0px;
 }
 
-#share_part > button {
+#share_part > a {
   width: 50%;
   background-color: var(--branco);
   border: 2px solid var(--preto);
   border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
 }
 
-#share_part > button:hover {
+#share_part > a:hover {
   background-color: var(--azul);
   color: white;
 }
