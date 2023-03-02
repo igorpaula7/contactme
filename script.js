@@ -10,3 +10,16 @@ botao.onclick = function switcher() {
     img.setAttribute("src", "./assets/pic-dark-mode.png")
   }
 }
+
+function share() {
+  if (navigator.share !== undefined) {
+    navigator
+      .share({
+        title: "Igor de Paula",
+        text: "Estudante de Engenharia de Software",
+        url: "https://igorpaula7.github.io/contactme",
+      })
+      .then(() => console.log("Successful share"))
+      .catch((error) => console.log("Error sharing", error))
+  }
+}

@@ -128,7 +128,11 @@ body {
   margin-top: 5px;
 }
 
-#links > button {
+#links > a {
+  width: 70%;
+}
+
+#links > a > button {
   width: 70%;
   font-size: 18px;
   padding: 10px 0px;
@@ -137,7 +141,7 @@ body {
   border-radius: 10px;
 }
 
-#links > button:hover {
+#links > a > button:hover {
   color: var(--preto);
   background-color: var(--branco);
   border: 2px solid var(--preto);
