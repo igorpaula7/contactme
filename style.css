@@ -90,7 +90,7 @@ body {
 }
 
 #share_part > a {
-  width: 50%;
+  width: 60%;
   background-color: var(--branco);
   border: 2px solid var(--preto);
   border-radius: 50px;
@@ -111,8 +111,10 @@ body {
   justify-content: space-around;
 }
 
-#social_links > * {
-  padding: 10px 0px;
+#social_links > a {
+  width: 35px;
+  height: 35px;
+  margin: 10px 0px;
 }
 
 #links {
