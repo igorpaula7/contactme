@@ -131,11 +131,11 @@ body {
 }
 
 #links > a {
-  width: 70%;
+  width: 200px;
 }
 
 #links > a > button {
-  width: 70%;
+  width: 200px;
   font-size: 18px;
   padding: 10px 0px;
   background-color: var(--azul);
